@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#080808" />
     <title>الأستاذ سعد بصيله — معًا نحو التفوق</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
     <style>
       :root {
         --bg: #080808;
@@ -22,13 +24,16 @@
         --line: #242424;
         --max: 1120px;
       }
+
       * {
         box-sizing: border-box;
       }
+
       html {
         scroll-behavior: smooth;
         scroll-padding-top: 86px;
       }
+
       body {
         margin: 0;
         background: var(--bg);
@@ -37,23 +42,28 @@
         line-height: 1.8;
         overflow-x: hidden;
       }
+
       a {
         color: inherit;
         text-decoration: none;
       }
+
       button,
       input,
       select,
       textarea {
         font: inherit;
       }
+
       button {
         cursor: pointer;
       }
+
       .wrap {
         width: min(var(--max), calc(100% - 42px));
         margin: auto;
       }
+
       header {
         position: sticky;
         top: 0;
@@ -62,6 +72,7 @@
         backdrop-filter: blur(18px);
         border-bottom: 1px solid #1d1d1d;
       }
+
       .nav {
         height: 70px;
         display: flex;
@@ -69,6 +80,7 @@
         justify-content: space-between;
         gap: 22px;
       }
+
       .brand {
         font-weight: 900;
         display: flex;
@@ -76,6 +88,7 @@
         gap: 10px;
         white-space: nowrap;
       }
+
       .brand-mark {
         width: 38px;
         height: 38px;
@@ -86,12 +99,14 @@
         font-size: 21px;
         box-shadow: 0 0 25px #e5093530;
       }
+
       .brand small {
         display: block;
         color: var(--red2);
         font-size: 10px;
         line-height: 1.2;
       }
+
       .navlinks {
         display: flex;
         align-items: center;
@@ -99,16 +114,19 @@
         font-size: 12px;
         color: #bcbcbc;
       }
+
       .navlinks a:hover,
       .navlinks a.active {
         color: #fff;
       }
+
       .navlinks a.active {
         background: #ececec;
         color: #111;
         border-radius: 24px;
         padding: 7px 13px;
       }
+
       .pill,
       .btn {
         border: 1px solid #303030;
@@ -123,16 +141,19 @@
         justify-content: center;
         gap: 8px;
       }
+
       .pill.red,
       .btn.primary {
         background: var(--red);
         border-color: var(--red);
       }
+
       .pill:hover,
       .btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 22px #e5093530;
       }
+
       .menu-btn {
         display: none;
         border: 1px solid #333;
@@ -141,6 +162,7 @@
         border-radius: 10px;
         padding: 7px 12px;
       }
+
       .hero {
         min-height: 490px;
         display: grid;
@@ -150,6 +172,7 @@
         padding: 60px 0;
         position: relative;
       }
+
       .hero:before {
         content: "";
         position: absolute;
@@ -161,15 +184,18 @@
         right: -140px;
         pointer-events: none;
       }
+
       .hero-copy {
         position: relative;
         z-index: 1;
       }
+
       .eyebrow {
         font-size: 12px;
         color: var(--red2);
         font-weight: 800;
       }
+
       .hero h1 {
         font-size: clamp(34px, 4vw, 55px);
         line-height: 1.35;
@@ -177,40 +203,48 @@
         font-weight: 900;
         letter-spacing: -1px;
       }
+
       .hero h1 span {
         color: var(--red);
       }
+
       .hero p {
         color: #aaa;
         font-size: 14px;
         max-width: 520px;
         margin: 0 0 25px;
       }
+
       .actions {
         display: flex;
         gap: 12px;
         flex-wrap: wrap;
       }
+
       .stats {
         display: flex;
         gap: 32px;
         margin-top: 27px;
       }
+
       .stat strong {
         font-size: 23px;
         display: block;
         line-height: 1.4;
       }
+
       .stat span {
         font-size: 11px;
         color: #999;
       }
+
       .hero-visual {
         position: relative;
         min-height: 320px;
         display: grid;
         place-items: center;
       }
+
       .hero-image {
         position: relative;
         width: min(100%, 490px);
@@ -221,6 +255,7 @@
         background: linear-gradient(135deg, #171717, #090909);
         box-shadow: -12px 12px 0 var(--red);
       }
+
       .hero-image img {
         width: 100%;
         height: 100%;
@@ -228,26 +263,31 @@
         opacity: 0.78;
         filter: brightness(0.72);
       }
+
       .hero-image:after {
         content: "";
         position: absolute;
         inset: 0;
         background: linear-gradient(0deg, #050505b0, transparent 65%);
       }
+
       .image-label {
         position: absolute;
         bottom: 22px;
         right: 22px;
         z-index: 2;
       }
+
       .image-label strong {
         font-size: 22px;
         display: block;
       }
+
       .image-label span {
         font-size: 12px;
         color: #ddd;
       }
+
       .floating-card {
         position: absolute;
         left: -10px;
@@ -259,18 +299,22 @@
         box-shadow: 0 15px 45px #0008;
         z-index: 3;
       }
+
       .floating-card b {
         color: var(--red2);
         font-size: 19px;
         display: block;
       }
+
       .floating-card span {
         font-size: 11px;
         color: #aaa;
       }
+
       .socialbar {
         border-block: 1px solid #202020;
       }
+
       .socials {
         display: flex;
         justify-content: center;
@@ -280,36 +324,44 @@
         font-size: 12px;
         color: #bbb;
       }
+
       .socials a:hover {
         color: var(--red2);
       }
+
       section {
         padding: 72px 0;
         border-bottom: 1px solid #1b1b1b;
       }
+
       .section-head {
         text-align: center;
         margin-bottom: 34px;
       }
+
       .section-head .eyebrow {
         font-size: 11px;
       }
+
       .section-head h2 {
         font-size: 29px;
         line-height: 1.4;
         margin: 3px 0 5px;
         font-weight: 900;
       }
+
       .section-head p {
         font-size: 13px;
         color: #999;
         margin: 0;
       }
+
       .features {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 15px;
       }
+
       .feature {
         background: linear-gradient(145deg, #121212, #0b0b0b);
         border: 1px solid #262626;
@@ -318,10 +370,12 @@
         text-align: center;
         transition: 0.3s;
       }
+
       .feature:hover {
         transform: translateY(-6px);
         border-color: #6d1a2d;
       }
+
       .feature-icon {
         width: 47px;
         height: 47px;
@@ -334,15 +388,18 @@
         color: #ff5271;
         font-size: 22px;
       }
+
       .feature h3 {
         font-size: 16px;
         margin: 0 0 6px;
       }
+
       .feature p {
         font-size: 12px;
         color: #999;
         margin: 0;
       }
+
       .timeline {
         position: relative;
         display: grid;
@@ -350,6 +407,7 @@
         gap: 18px;
         padding-top: 27px;
       }
+
       .timeline:before {
         content: "";
         height: 2px;
@@ -359,10 +417,12 @@
         left: 8%;
         background: linear-gradient(90deg, #e50935, #8b1634, #e50935);
       }
+
       .step {
         position: relative;
         padding-top: 34px;
       }
+
       .step-num {
         position: absolute;
         top: 0;
@@ -381,6 +441,7 @@
         font-weight: 800;
         z-index: 2;
       }
+
       .step-card {
         height: 100%;
         border: 1px solid #292929;
@@ -389,24 +450,29 @@
         padding: 27px 17px 20px;
         text-align: center;
       }
+
       .symbol {
         color: var(--red2);
         font-size: 23px;
       }
+
       .step-card h3 {
         font-size: 15px;
         margin: 4px 0;
       }
+
       .step-card p {
         font-size: 12px;
         color: #999;
         margin: 0;
       }
+
       .resources {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 17px;
       }
+
       .resource {
         border: 1px solid #343434;
         border-radius: 16px;
@@ -417,12 +483,15 @@
         flex-direction: column;
         align-items: flex-start;
       }
+
       .resource:nth-child(2) {
         background: linear-gradient(135deg, #151515, #101010);
       }
+
       .resource:nth-child(3) {
         background: linear-gradient(135deg, #10131a, #101010);
       }
+
       .resource-icon {
         width: 43px;
         height: 43px;
@@ -434,26 +503,31 @@
         font-size: 21px;
         margin-bottom: 12px;
       }
+
       .resource h3 {
         margin: 0 0 5px;
         font-size: 17px;
       }
+
       .resource p {
         font-size: 12px;
         color: #aaa;
         margin: 0 0 17px;
       }
+
       .resource .btn {
         margin-top: auto;
         font-size: 12px;
         padding: 8px 17px;
       }
+
       .resource-list {
         width: 100%;
         display: grid;
         gap: 10px;
         margin-top: 10px;
       }
+
       .resource-item {
         border: 1px solid #292929;
         background: #0b0b0b;
@@ -466,18 +540,22 @@
         width: 100%;
         min-width: 0;
       }
+
       .resource-item strong {
         font-size: 13px;
         display: block;
         overflow-wrap: anywhere;
       }
+
       .resource-item small {
         font-size: 11px;
         color: #999;
       }
+
       .resource-item .btn {
         flex-shrink: 0;
       }
+
       .empty {
         color: #888;
         font-size: 12px;
@@ -486,12 +564,14 @@
         border-radius: 12px;
         width: 100%;
       }
+
       .about-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 45px;
         align-items: center;
       }
+
       .about-art {
         min-height: 300px;
         border: 1px solid #292929;
@@ -504,6 +584,7 @@
         display: grid;
         place-items: center;
       }
+
       .math-orbit {
         width: 210px;
         height: 210px;
@@ -514,6 +595,7 @@
         box-shadow: 0 0 70px #e509351c;
         position: relative;
       }
+
       .math-orbit:before,
       .math-orbit:after {
         content: "";
@@ -522,60 +604,73 @@
         border-radius: 50%;
         inset: 22px;
       }
+
       .math-orbit:after {
         inset: -24px;
         border-style: dashed;
       }
+
       .math-orbit strong {
         font-size: 65px;
         color: #f5f5f5;
         font-weight: 900;
       }
+
       .math-orbit strong span {
         color: var(--red);
       }
+
       .math-float {
         position: absolute;
         color: #ff4165;
         font-size: 22px;
         font-weight: 800;
       }
+
       .mf1 {
         top: 25px;
         right: 28px;
       }
+
       .mf2 {
         bottom: 28px;
         left: 36px;
         color: #aaa;
       }
+
       .mf3 {
         top: 48px;
         left: 35px;
         color: #777;
       }
+
       .about-copy h2 {
         font-size: 30px;
         line-height: 1.5;
         margin: 8px 0 14px;
       }
+
       .about-copy p {
         color: #aaa;
         font-size: 14px;
       }
+
       .checklist {
         display: grid;
         gap: 9px;
         margin-top: 22px;
       }
+
       .checklist div {
         font-size: 13px;
         color: #ddd;
       }
+
       .checklist span {
         color: var(--red2);
         margin-left: 8px;
       }
+
       .contact-panel {
         background: linear-gradient(120deg, #1b0b11, #111 55%, #111);
         border: 1px solid #3a2027;
@@ -586,30 +681,36 @@
         justify-content: space-between;
         gap: 25px;
       }
+
       .contact-panel h2 {
         font-size: 25px;
         margin: 0 0 5px;
       }
+
       .contact-panel p {
         font-size: 13px;
         color: #aaa;
         margin: 0;
       }
+
       footer {
         padding: 23px 0;
         color: #888;
         font-size: 11px;
       }
+
       .footer-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
       }
+
       .footer-brand {
         color: #ddd;
         font-weight: 800;
       }
+
       .admin-overlay {
         position: fixed;
         inset: 0;
@@ -622,9 +723,11 @@
         padding: 24px;
         overflow: auto;
       }
+
       .admin-overlay.open {
         display: flex;
       }
+
       .admin-box {
         width: min(760px, 100%);
         margin: auto;
@@ -634,6 +737,7 @@
         padding: 24px;
         box-shadow: 0 25px 100px #000;
       }
+
       .admin-top {
         display: flex;
         justify-content: space-between;
@@ -641,10 +745,12 @@
         gap: 12px;
         margin-bottom: 18px;
       }
+
       .admin-top h2 {
         font-size: 22px;
         margin: 0;
       }
+
       .close {
         background: #222;
         color: white;
@@ -652,22 +758,27 @@
         border-radius: 10px;
         padding: 7px 12px;
       }
+
       .form-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
       }
+
       .field {
         display: grid;
         gap: 6px;
       }
+
       .field.full {
         grid-column: 1/-1;
       }
+
       .field label {
         font-size: 12px;
         color: #bbb;
       }
+
       .field input,
       .field select,
       .field textarea {
@@ -679,17 +790,20 @@
         width: 100%;
         outline: none;
       }
+
       .field input:focus,
       .field select:focus,
       .field textarea:focus {
         border-color: var(--red);
       }
+
       .admin-tabs {
         display: flex;
         gap: 8px;
         margin: 15px 0 20px;
         flex-wrap: wrap;
       }
+
       .admin-tabs button {
         background: #1a1a1a;
         color: #ddd;
@@ -698,16 +812,19 @@
         padding: 8px 14px;
         font-size: 12px;
       }
+
       .admin-tabs button.active {
         background: var(--red);
         border-color: var(--red);
         color: #fff;
       }
+
       .admin-list {
         display: grid;
         gap: 8px;
         margin-top: 15px;
       }
+
       .admin-row {
         display: flex;
         align-items: center;
@@ -718,41 +835,50 @@
         border-radius: 11px;
         padding: 11px 13px;
       }
+
       .admin-row strong {
         font-size: 12px;
         overflow-wrap: anywhere;
       }
+
       .admin-row small {
         display: block;
         color: #999;
         font-size: 10px;
       }
+
       .danger {
         background: #3a1019 !important;
         border-color: #7e2035 !important;
         color: #ff9caf !important;
       }
+
       .status {
         font-size: 12px;
         color: #bcbcbc;
         min-height: 22px;
         margin: 8px 0;
       }
+
       .status.error {
         color: #ff7189;
       }
+
       .status.ok {
         color: #76e3a0;
       }
+
       .note {
         font-size: 11px;
         color: #999;
         line-height: 1.8;
         margin-top: 12px;
       }
+
       .hidden {
         display: none !important;
       }
+
       .reveal {
         opacity: 0;
         transform: translateY(20px);
@@ -760,45 +886,57 @@
           opacity 0.7s ease,
           transform 0.7s ease;
       }
+
       .reveal.visible {
         opacity: 1;
         transform: translateY(0);
       }
+
       @media (max-width: 900px) {
         .navlinks {
           gap: 10px;
           font-size: 11px;
         }
+
         .hero {
           gap: 25px;
         }
+
         .features {
           grid-template-columns: repeat(2, 1fr);
         }
+
         .timeline {
           grid-template-columns: repeat(2, 1fr);
           row-gap: 30px;
         }
+
         .timeline:before {
           display: none;
         }
+
         .resources {
           grid-template-columns: 1fr 1fr;
         }
+
         .about-grid {
           gap: 25px;
         }
       }
+
       @media (max-width: 650px) {
         .wrap {
           width: min(100% - 30px, var(--max));
         }
+
         .nav {
           height: 62px;
         }
+
         .menu-btn {
           display: block;
         }
+
         .navlinks {
           display: none;
           position: absolute;
@@ -813,134 +951,173 @@
           align-items: stretch;
           gap: 5px;
         }
+
         .navlinks.open {
           display: flex;
         }
+
         .navlinks a {
           padding: 8px 12px;
         }
+
         .nav-actions {
           display: none;
         }
+
         .hero {
           grid-template-columns: 1fr;
           padding: 43px 0 48px;
           gap: 32px;
         }
+
         .hero-copy {
           text-align: center;
         }
+
         .hero p {
           margin-inline: auto;
         }
+
         .actions {
           justify-content: center;
         }
+
         .stats {
           justify-content: center;
           gap: 22px;
         }
+
         .stat strong {
           font-size: 20px;
         }
+
         .hero-visual {
           min-height: 260px;
         }
+
         .hero-image {
           height: 250px;
           width: calc(100% - 15px);
         }
+
         .floating-card {
           left: 0;
           bottom: -10px;
         }
+
         .socials {
           gap: 16px;
           flex-wrap: wrap;
           padding: 15px 0;
         }
+
         .socials a {
           font-size: 11px;
         }
+
         section {
           padding: 52px 0;
         }
+
         .section-head h2 {
           font-size: 25px;
         }
+
         .features {
           gap: 10px;
         }
+
         .feature {
           padding: 19px 12px;
         }
+
         .feature h3 {
           font-size: 14px;
         }
+
         .timeline {
           grid-template-columns: 1fr 1fr;
           gap: 12px;
         }
+
         .step-card {
           padding: 25px 11px 16px;
         }
+
         .step-card p {
           font-size: 11px;
         }
+
         .resources {
           grid-template-columns: 1fr;
         }
+
         .resource {
           min-height: 165px;
         }
+
         .about-grid {
           grid-template-columns: 1fr;
         }
+
         .about-art {
           min-height: 260px;
           order: 2;
         }
+
         .contact-panel {
           padding: 25px 20px;
           flex-direction: column;
           align-items: flex-start;
         }
+
         .contact-panel h2 {
           font-size: 21px;
         }
+
         .footer-inner {
           flex-direction: column;
           text-align: center;
         }
+
         .brand {
           font-size: 13px;
         }
+
         .form-grid {
           grid-template-columns: 1fr;
         }
+
         .field.full {
           grid-column: auto;
         }
+
         .admin-overlay {
           padding: 10px;
         }
+
         .admin-box {
           padding: 17px;
         }
+
         .admin-row {
           align-items: flex-start;
         }
+
         .resource-item {
           align-items: flex-start;
         }
+
         .resource-item .btn {
           padding: 7px 10px;
         }
       }
+
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
         }
+
         *,
         *:before,
         *:after {
@@ -950,10 +1127,9 @@
       }
 
       /* ================================
-   Professional CSS Animations
-================================ */
+         Professional CSS Animations
+      ================================= */
 
-      /* ظهور تدريجي للمحتوى */
       @keyframes fadeUp {
         from {
           opacity: 0;
@@ -966,7 +1142,6 @@
         }
       }
 
-      /* توهج أحمر */
       @keyframes redGlow {
         0%,
         100% {
@@ -978,7 +1153,6 @@
         }
       }
 
-      /* حركة عائمة */
       @keyframes floating {
         0%,
         100% {
@@ -990,7 +1164,6 @@
         }
       }
 
-      /* ظهور عناصر الصفحة */
       .hero-copy,
       .hero-visual,
       .section-head,
@@ -1003,7 +1176,6 @@
         animation: fadeUp 0.8s ease both;
       }
 
-      /* تأخير ظهور الكروت */
       .feature:nth-child(2),
       .step:nth-child(2) {
         animation-delay: 0.12s;
@@ -1019,7 +1191,6 @@
         animation-delay: 0.36s;
       }
 
-      /* حركة الصورة والكارت العائم */
       .hero-image {
         transition:
           transform 0.45s ease,
@@ -1035,7 +1206,6 @@
         animation: floating 3s ease-in-out infinite;
       }
 
-      /* تأثيرات الكروت */
       .feature,
       .step-card,
       .resource {
@@ -1053,7 +1223,6 @@
         box-shadow: 0 15px 35px #0005;
       }
 
-      /* تأثير الأزرار */
       .btn,
       .pill {
         position: relative;
@@ -1070,7 +1239,6 @@
         box-shadow: 0 0 24px #e5093540;
       }
 
-      /* حركة العلامة */
       .brand-mark {
         transition:
           transform 0.35s ease,
@@ -1082,7 +1250,6 @@
         animation: redGlow 2s infinite;
       }
 
-      /* حركة الرسومات الرياضية */
       .math-orbit {
         animation: floating 5s ease-in-out infinite;
       }
@@ -1097,7 +1264,6 @@
         }
       }
 
-      /* تحسين التفاعل مع الروابط */
       .navlinks a,
       .socials a,
       footer a {
@@ -1106,7 +1272,46 @@
           background 0.25s ease;
       }
 
-      /* احترام إعدادات تقليل الحركة */
+      /* تحسين عرض عناصر الفيديو */
+      #filesList .resource-item {
+        transition:
+          transform 0.25s ease,
+          border-color 0.25s ease,
+          background 0.25s ease;
+      }
+
+      #filesList .resource-item:hover {
+        transform: translateY(-3px);
+        border-color: var(--red);
+        background: #151015;
+      }
+
+      #filesList .resource-item .btn {
+        background: var(--red);
+        border-color: var(--red);
+        white-space: nowrap;
+      }
+
+      #filesList .resource-item .btn:hover {
+        background: var(--red2);
+      }
+
+      #videoCount {
+        transition: color 0.3s ease;
+      }
+
+      #videoCount.updated {
+        color: var(--red2);
+      }
+
+      .video-description {
+        display: block;
+        margin-top: 3px;
+        color: #999;
+        font-size: 11px;
+        overflow-wrap: anywhere;
+      }
+
       @media (prefers-reduced-motion: reduce) {
         *,
         *::before,
@@ -1117,27 +1322,34 @@
         }
       }
     </style>
+
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="./config.js"></script>
   </head>
+
   <body>
     <header>
       <div class="wrap nav">
-        <a class="brand" href="#home"
-          ><span class="brand-mark">∑</span
-          ><span
-            >الأستاذ سعد بصيله في الرياضيات<small>معًا نحو التفوق</small></span
-          ></a
-        >
+        <a class="brand" href="#home">
+          <span class="brand-mark">∑</span>
+          <span>
+            الأستاذ سعد بصيله في الرياضيات
+            <small>معًا نحو التفوق</small>
+          </span>
+        </a>
+
         <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">
           ☰
         </button>
+
         <nav class="navlinks" id="navLinks">
-          <a class="active" href="#home">الرئيسية</a
-          ><a href="#about">عن المدرس</a><a href="#journey">مسيرة التفوق</a
-          ><a href="#resources">المذكرات والملفات</a
-          ><a href="#contact">التواصل</a>
+          <a class="active" href="#home">الرئيسية</a>
+          <a href="#about">عن المدرس</a>
+          <a href="#journey">مسيرة التفوق</a>
+          <a href="#resources">الفيديوهات والمذكرات</a>
+          <a href="#contact">التواصل</a>
         </nav>
+
         <div class="nav-actions">
           <a
             class="pill red"
@@ -1145,58 +1357,76 @@
             href="https://wa.me/"
             target="_blank"
             rel="noopener"
-            >تواصل عبر واتساب ↗</a
           >
+            تواصل عبر واتساب ↗
+          </a>
         </div>
       </div>
     </header>
+
     <main>
       <div class="wrap hero" id="home">
         <div class="hero-copy reveal">
           <div class="eyebrow">— تأسيس قوي • فهم أعمق • نتائج أفضل</div>
+
           <h1>أهلًا، بكم <span>مع استاذ سعد</span></h1>
+
           <p>
             هدفي أخلي الرياضيات أبسط وأسهل. هنفهم الفكرة قبل ما نحفظ القانون،
             ونتدرّب خطوة بخطوة لحد ما توصل لأفضل نتيجة تقدر تحققها.
           </p>
+
           <div class="actions">
-            <a class="btn primary" href="#resources">استكشف المذكرات ↗</a
-            ><a class="btn" href="#journey">اكتشف طريقة الشرح ←</a>
+            <a class="btn primary" href="#resources">استكشف الفيديوهات ↗</a>
+            <a class="btn" href="#journey">اكتشف طريقة الشرح ←</a>
           </div>
+
           <div class="stats">
             <div class="stat">
-              <strong>+2</strong><span>مذكرة وملف تعليمي</span>
+              <strong id="videoCount">0</strong>
+              <span> الملفات و الروابط</span>
             </div>
+
             <div class="stat">
-              <strong>+50000</strong><span>طالب وطالبة</span>
+              <strong>+20000</strong>
+              <span>طالب وطالبة</span>
             </div>
+
             <div class="stat">
-              <strong>4.9/5</strong><span>تقييم الطلاب</span>
+              <strong>4.9/5</strong>
+              <span>تقييم الطلاب</span>
             </div>
           </div>
         </div>
+
         <div class="hero-visual reveal">
           <div class="hero-image">
             <img
               src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85"
               alt="بيئة تعليمية داخل فصل دراسي"
             />
+
             <div class="image-label">
-              <strong>الرياضيات ببساطة</strong><span>من الفهم إلى التفوق</span>
+              <strong>الرياضيات ببساطة</strong>
+              <span>من الفهم إلى التفوق</span>
             </div>
           </div>
+
           <div class="floating-card">
-            <b>∞ + π</b><span>كل مسألة ليها طريقة</span>
+            <b>∞ + π</b>
+            <span>كل مسألة ليها طريقة</span>
           </div>
         </div>
       </div>
+
       <div class="socialbar">
         <div class="wrap socials">
-          <a href="#resources">▤ المذكرات</a
-          ><a href="#resources">⇩ ملفات التحميل</a
-          ><a href="#contact" id="socialWhatsApp">◉ واتساب</a>
+          <a href="#resources">▶ فيديوهات الشرح</a>
+          <a href="#resources">▤ المذكرات</a>
+          <a href="#contact" id="socialWhatsApp">◉ واتساب</a>
         </div>
       </div>
+
       <section id="about">
         <div class="wrap">
           <div class="section-head reveal">
@@ -1204,22 +1434,26 @@
             <h2>تعليم واضح يوصلك للنتيجة</h2>
             <p>مش مجرد قوانين، دي طريقة تفكير هتفضل معاك</p>
           </div>
+
           <div class="features">
             <article class="feature reveal">
               <div class="feature-icon">✦</div>
               <h3>خبرة في التدريس</h3>
               <p>شرح منظم يناسب مستواك ويبدأ معاك من الأساسيات.</p>
             </article>
+
             <article class="feature reveal">
               <div class="feature-icon">▶</div>
               <h3>شرح مبسّط</h3>
               <p>نحوّل الأفكار الصعبة لخطوات واضحة وأمثلة عملية.</p>
             </article>
+
             <article class="feature reveal">
               <div class="feature-icon">▤</div>
               <h3>محتوى شامل</h3>
               <p>مذكرات ومراجعات وتدريبات تساعدك تذاكر بتركيز.</p>
             </article>
+
             <article class="feature reveal">
               <div class="feature-icon">◎</div>
               <h3>متابعة مستمرة</h3>
@@ -1228,6 +1462,7 @@
           </div>
         </div>
       </section>
+
       <section id="journey">
         <div class="wrap">
           <div class="section-head reveal">
@@ -1235,6 +1470,7 @@
             <h2>طريقك نحو التفوق</h2>
             <p>من أول فهم الفكرة لحد الاستعداد للامتحان</p>
           </div>
+
           <div class="timeline">
             <article class="step reveal">
               <div class="step-num">01</div>
@@ -1244,6 +1480,7 @@
                 <p>نفهم الأساسيات وسبب كل قانون قبل استخدامه.</p>
               </div>
             </article>
+
             <article class="step reveal">
               <div class="step-num">02</div>
               <div class="step-card">
@@ -1252,6 +1489,7 @@
                 <p>نطبق على مستويات مختلفة من السهل للأصعب.</p>
               </div>
             </article>
+
             <article class="step reveal">
               <div class="step-num">03</div>
               <div class="step-card">
@@ -1260,6 +1498,7 @@
                 <p>نماذج متنوعة تكشف نقاط القوة وما يحتاج مراجعة.</p>
               </div>
             </article>
+
             <article class="step reveal">
               <div class="step-num">04</div>
               <div class="step-card">
@@ -1271,63 +1510,84 @@
           </div>
         </div>
       </section>
+
       <section id="resources">
         <div class="wrap">
           <div class="section-head reveal">
             <div class="eyebrow">— كل اللي تحتاجه في مكان واحد</div>
-            <h2>المذكرات والملفات والروابط</h2>
-            <p>كل جديد تضيفه من لوحة التحكم هيظهر هنا تلقائيًا</p>
+            <h2>فيديوهات الشرح والمذكرات والروابط</h2>
+            <p>
+              كل فيديو أو مذكرة أو رابط جديد تضيفه من لوحة التحكم هيظهر هنا
+              تلقائيًا
+            </p>
           </div>
+
           <div class="resources">
+            <!-- فيديوهات الشرح -->
             <article class="resource reveal">
-              <div class="resource-icon">⇩</div>
-              <h3>ملفات التحميل</h3>
-              <p>ملفات PDF وأوراق عمل تقدر تحتفظ بيها وتذاكر منها.</p>
+              <div class="resource-icon">▶</div>
+              <h3>فيديوهات الشرح</h3>
+              <p>
+                شاهد الفيديوهات التعليمية والشروحات التي ينشرها المدرس باستمرار.
+              </p>
+
               <div class="resource-list" id="filesList">
-                <div class="empty">جاري تحميل الملفات...</div>
+                <div class="empty">جاري تحميل الفيديوهات...</div>
               </div>
             </article>
+
+            <!-- المذكرات -->
             <article class="resource reveal">
               <div class="resource-icon">▤</div>
               <h3>المذكرات</h3>
               <p>ملخصات للقوانين وأمثلة محلولة وتدريبات للمراجعة.</p>
+
               <div class="resource-list" id="notesList">
                 <div class="empty">جاري تحميل المذكرات...</div>
               </div>
             </article>
+
+            <!-- الروابط -->
             <article class="resource reveal">
               <div class="resource-icon">↗</div>
               <h3>روابط مفيدة</h3>
               <p>روابط تعليمية يضيفها المدرس من لوحة التحكم.</p>
+
               <div class="resource-list" id="linksList">
                 <div class="empty">جاري تحميل الروابط...</div>
               </div>
             </article>
           </div>
+
           <p class="note" id="publicStatus" aria-live="polite"></p>
         </div>
       </section>
+
       <section>
         <div class="wrap about-grid">
           <div class="about-art reveal">
-            <span class="math-float mf1">π ≈ 3.14</span
-            ><span class="math-float mf2">f(x) = ?</span
-            ><span class="math-float mf3">∑ x²</span>
+            <span class="math-float mf1">π ≈ 3.14</span>
+            <span class="math-float mf2">f(x) = ?</span>
+            <span class="math-float mf3">∑ x²</span>
+
             <div class="math-orbit">
               <strong>∑<span>x</span></strong>
             </div>
           </div>
+
           <div class="about-copy reveal">
             <div class="eyebrow">— معًا خطوة بخطوة</div>
+
             <h2>
-              الهدف مش تحفظ الحل،<br /><span style="color: var(--red)"
-                >الهدف تعرف توصل له</span
-              >
+              الهدف مش تحفظ الحل،<br />
+              <span style="color: var(--red)">الهدف تعرف توصل له</span>
             </h2>
+
             <p>
               كل طالب يقدر يتقدم لما يلاقي شرح واضح وخطة مناسبة وتدريب مستمر.
               هنا هنشتغل على الفهم، وتنظيم المذاكرة، والثقة في حل المسائل.
             </p>
+
             <div class="checklist">
               <div><span>✓</span> شرح مرتب من الأساسيات للتطبيق</div>
               <div><span>✓</span> تدريبات متنوعة مع مراجعة مستمرة</div>
@@ -1336,6 +1596,7 @@
           </div>
         </div>
       </section>
+
       <section id="contact">
         <div class="wrap">
           <div class="contact-panel reveal">
@@ -1343,27 +1604,36 @@
               <div class="eyebrow">— جاهز تبدأ؟</div>
               <h2>خلّينا نبدأ رحلة التفوق</h2>
               <p>للاستفسار عن المجموعات أو المذكرات أو مواعيد الحجز.</p>
+              <p style="color: var(--red); margin-top: 10px">+20 1019756546</p>
             </div>
+
             <a
               class="btn primary"
               id="contactWhatsApp"
               href="https://wa.me/"
               target="_blank"
               rel="noopener"
-              >تواصل عبر واتساب ↗</a
             >
+              تواصل عبر واتساب ↗
+            </a>
           </div>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="wrap footer-inner">
-        <div class="footer-brand">∑ العنتيل في الرياضيات — معًا نحو التفوق</div>
+        <div class="footer-brand">
+          ∑ استاذ سعد في الرياضيات — معًا نحو التفوق
+        </div>
+
         <div>© <span id="year"></span> جميع الحقوق محفوظة</div>
+
         <a href="#home">العودة للأعلى ↑</a>
       </div>
     </footer>
 
+    <!-- لوحة الإدارة -->
     <div
       class="admin-overlay"
       id="adminOverlay"
@@ -1376,14 +1646,17 @@
           <h2>لوحة إدارة الموقع</h2>
           <button class="close" id="closeAdmin">إغلاق ✕</button>
         </div>
+
+        <!-- تسجيل الدخول -->
         <div id="loginPanel">
           <p style="color: #aaa; font-size: 13px">
             سجّل الدخول بحساب الإدارة الذي أنشأته في Supabase.
           </p>
+
           <form id="loginForm" class="form-grid">
             <div class="field full">
-              <label for="email">البريد الإلكتروني</label
-              ><input
+              <label for="email">البريد الإلكتروني</label>
+              <input
                 id="email"
                 type="email"
                 autocomplete="username"
@@ -1391,147 +1664,217 @@
                 placeholder="admin@example.com"
               />
             </div>
+
             <div class="field full">
-              <label for="password">كلمة المرور</label
-              ><input
+              <label for="password">كلمة المرور</label>
+              <input
                 id="password"
                 type="password"
                 autocomplete="current-password"
                 required
               />
             </div>
+
             <div class="field full">
               <button class="btn primary" type="submit">تسجيل الدخول</button>
             </div>
           </form>
+
           <div class="status" id="loginStatus"></div>
+
           <p class="note">
             الدخول محمي بتسجيل Supabase، وليس بكلمة مرور مكتوبة داخل الموقع.
           </p>
         </div>
+
+        <!-- لوحة التحكم بعد تسجيل الدخول -->
         <div id="dashboard" class="hidden">
           <div class="admin-top">
             <div>
               <strong id="signedInAs"></strong>
               <div class="note">المحتوى المنشور يظهر لكل الزوار.</div>
             </div>
+
             <button class="btn" id="logoutBtn">تسجيل الخروج</button>
           </div>
+
           <div class="admin-tabs">
-            <button class="active" data-tab="file">إضافة ملف / مذكرة</button
-            ><button data-tab="link">إضافة رابط</button
-            ><button data-tab="manage">إدارة المحتوى</button
-            ><button data-tab="settings">إعدادات واتساب</button>
+            <button class="active" data-tab="file">إضافة فيديو</button>
+            <button data-tab="note">إضافة مذكرة</button>
+            <button data-tab="link">إضافة رابط</button>
+            <button data-tab="manage">إدارة المحتوى</button>
+            <button data-tab="settings">إعدادات واتساب</button>
           </div>
+
+          <!-- إضافة فيديو -->
           <div id="tab-file">
             <form id="fileForm" class="form-grid">
               <div class="field full">
-                <label for="fileTitle">اسم الملف</label
-                ><input
+                <label for="fileTitle">عنوان الفيديو</label>
+                <input
                   id="fileTitle"
                   required
                   maxlength="120"
-                  placeholder="مثال: مذكرة التفاضل"
+                  placeholder="مثال: شرح درس التفاضل"
                 />
               </div>
-              <div class="field">
-                <label for="fileCategory">نوع المحتوى</label
-                ><select id="fileCategory">
-                  <option value="file">ملفات التحميل</option>
-                  <option value="note">المذكرات</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="fileUpload">اختيار ملف (PDF أو صورة أو مستند)</label
-                ><input
-                  id="fileUpload"
-                  type="file"
-                  required
-                  accept=".pdf,.png,.jpg,.jpeg,.webp,.doc,.docx,.ppt,.pptx,.zip"
-                />
-              </div>
+
               <div class="field full">
-                <label for="fileDescription">وصف مختصر (اختياري)</label
-                ><input
+                <label for="fileUpload">رابط الفيديو</label>
+                <input
+                  id="fileUpload"
+                  type="url"
+                  required
+                  maxlength="1000"
+                  placeholder="https://www.youtube.com/watch?v=..."
+                />
+              </div>
+
+              <div class="field full">
+                <label for="fileDescription">وصف الفيديو (اختياري)</label>
+                <input
                   id="fileDescription"
                   maxlength="220"
-                  placeholder="الصف الدراسي أو محتوى الملف"
+                  placeholder="مثال: شرح الدرس الأول للصف الثالث الثانوي"
                 />
               </div>
+
               <div class="field full">
-                <button class="btn primary" type="submit">
-                  رفع ونشر الملف
-                </button>
+                <button class="btn primary" type="submit">نشر الفيديو</button>
               </div>
             </form>
+
             <div class="status" id="fileStatus"></div>
+
             <p class="note">
-              الحد الافتراضي للملف 20MB. الملفات تُرفع إلى التخزين السحابي، فلا
-              تحتاج لإعادة رفعها عند كل زيارة.
+              ضع رابط الفيديو من YouTube أو منصة الفيديو المستخدمة. لا تحتاج إلى
+              رفع الفيديو نفسه إلى الموقع، بل يتم حفظ الرابط وعرضه للطلاب.
             </p>
           </div>
+
+          <!-- إضافة مذكرة -->
+          <div id="tab-note" class="hidden">
+            <form id="noteForm" class="form-grid">
+              <div class="field full">
+                <label for="noteTitle">عنوان المذكرة</label>
+                <input
+                  id="noteTitle"
+                  required
+                  maxlength="120"
+                  placeholder="مثال: ملخص قوانين التفاضل"
+                />
+              </div>
+
+              <div class="field full">
+                <label for="noteUpload">ملف المذكرة أو الصورة</label>
+                <input
+                  id="noteUpload"
+                  type="file"
+                  accept=".pdf,.doc,.docx,.ppt,.pptx,.jpg,.jpeg,.png,.webp,.gif,image/*"
+                  required
+                />
+              </div>
+
+              <div class="field full">
+                <label for="noteDescription">وصف المذكرة</label>
+                <input
+                  id="noteDescription"
+                  maxlength="220"
+                  placeholder="مثال: ملخص القوانين مع أمثلة محلولة وتدريبات للمراجعة"
+                />
+              </div>
+
+              <div class="field full">
+                <button class="btn primary" type="submit">نشر المذكرة</button>
+              </div>
+            </form>
+
+            <div class="status" id="noteStatus"></div>
+
+            <p class="note">
+              يمكنك رفع ملفات PDF أو Word. بعد النشر ستظهر المذكرة في قسم
+              المذكرات على الموقع.
+            </p>
+          </div>
+
+          <!-- إضافة رابط -->
           <div id="tab-link" class="hidden">
             <form id="linkForm" class="form-grid">
               <div class="field full">
-                <label for="linkTitle">اسم الرابط</label
-                ><input
+                <label for="linkTitle">اسم الرابط</label>
+                <input
                   id="linkTitle"
                   required
                   maxlength="120"
                   placeholder="مثال: صفحة المراجعات"
                 />
               </div>
+
               <div class="field full">
-                <label for="linkUrl">الرابط الكامل</label
-                ><input
+                <label for="linkUrl">الرابط الكامل</label>
+                <input
                   id="linkUrl"
                   type="url"
                   required
                   placeholder="https://example.com"
                 />
               </div>
+
               <div class="field full">
-                <label for="linkDescription">وصف مختصر (اختياري)</label
-                ><input
+                <label for="linkDescription">وصف مختصر (اختياري)</label>
+                <input
                   id="linkDescription"
                   maxlength="220"
                   placeholder="وصف الرابط"
                 />
               </div>
+
               <div class="field full">
                 <button class="btn primary" type="submit">حفظ الرابط</button>
               </div>
             </form>
+
             <div class="status" id="linkStatus"></div>
           </div>
+
+          <!-- إدارة المحتوى -->
           <div id="tab-manage" class="hidden">
             <p style="font-size: 12px; color: #aaa">
-              تقدر تحذف أي عنصر من هنا. الحذف نهائي.
+              تقدر تحذف أي عنصر من هنا. تأكد من العنصر قبل الحذف.
             </p>
+
             <div class="admin-list" id="manageList">
               <div class="empty">جاري تحميل المحتوى...</div>
             </div>
+
             <div class="status" id="manageStatus"></div>
           </div>
+
+          <!-- إعدادات واتساب -->
           <div id="tab-settings" class="hidden">
             <form id="settingsForm" class="form-grid">
               <div class="field full">
-                <label for="whatsappNumber"
-                  >رقم واتساب مع مفتاح الدولة (أرقام فقط)</label
-                ><input
+                <label for="whatsappNumber">
+                  رقم واتساب مع مفتاح الدولة (أرقام فقط)
+                </label>
+
+                <input
                   id="whatsappNumber"
                   inputmode="numeric"
                   placeholder="201xxxxxxxxx"
                   required
                 />
               </div>
+
               <div class="field full">
                 <button class="btn primary" type="submit">
                   حفظ رقم واتساب
                 </button>
               </div>
             </form>
+
             <div class="status" id="settingsStatus"></div>
+
             <p class="note">
               رقم واتساب يُحفظ في قاعدة البيانات ويظهر في أزرار التواصل بالموقع.
             </p>
@@ -1539,6 +1882,7 @@
         </div>
       </div>
     </div>
+
     <script src="./app.js"></script>
   </body>
 </html>
